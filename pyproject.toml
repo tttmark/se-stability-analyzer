@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "se-stability-analyzer"
+version = "0.1.0"
+description = "A dependency-free CLI for near/far-field shielding effectiveness stability analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "tttmark" }]
+keywords = ["electromagnetic-shielding", "shielding-effectiveness", "near-field", "far-field"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = []
+
+[project.scripts]
+se-stability = "se_stability_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
