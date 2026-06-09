@@ -21,7 +21,7 @@
 要求 Python 3.10 或更高版本。
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/se-stability-analyzer.git
+git clone https://github.com/tttmark/se-stability-analyzer.git
 cd se-stability-analyzer
 python -m pip install -e .
 se-stability examples/sample_se.csv --target-db 3
